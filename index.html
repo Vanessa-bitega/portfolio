@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abewe's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    
+    <div class="hero-header">
+
+        <header class="header">
+            <div class="logo">
+                <i class="fa-solid fa-a"></i>
+                <!-- <div class="logo-text">Abewe Vanessa</div> -->
+            </div>
+            <nav>
+                <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <!-- <span></span> -->
+                    <span></span>
+                </div>
+                <ul class="navlinks">
+                    <li class="active"><a class="active" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html">MyWork</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    
+                </ul>
+            </nav>
+            <hr class="line">
+
+
+        </header>
+
+        <div class="wrapper">
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="IMG-mypicture-WA0000_2.jpg" alt="">
+                </div>
+                <div class="hero-text">
+
+                    <h2>Hi, <span>Abewe Vanessa</span> here 👋</h2>
+                    
+                    <p>I am a <span class="input"> Software Developer</span> <br>  with expertise in building dynamic and responsive web applications.
+                         With a solid foundation in React, Next.js, and Tailwind CSS, 
+                    I craft user-friendly interfaces that are both visually appealing and highly functional.<br/>  <br/>
+                    My experience extends to robust backend development, where I handle authentication, manage databases with MongoDB and Prisma,
+                     and integrate APIs using Express.,
+                     I’m here to help bring your vision to life. Let’s build something great together!
+                    </p>
+                    
+                    <div class="btn-group">
+                        <a href="📑 CV abewe (3).pdf" download="Cv abewe.pdf" class="btn active">Download CV</a>
+                        <!-- <a href="#" class="btn">Contact</a> -->
+                    </div>
+                    <div class="social">
+                        <a
+                            href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com/Vanessa-bitega"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+        var typed = new Typed(".input", {
+            strings: ["Software Developer","Front-end Developer", "Back-end Deveoper", "Web Developer"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 60,
+            backDelay: 1000
+
+
+        });
+
+    </script>
+
+</body>
+
+</html>

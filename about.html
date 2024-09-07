@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <title>Skills Marquee</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <i class="fa-solid fa-a"></i>
+      <!-- <div class="logo-text">Abewe Vanessa</div> -->
+    </div>
+    <nav>
+      <div class="togglebtn">
+        <span></span>
+        <span></span>
+        <!-- <span></span> -->
+        <span></span>
+      </div>
+      <ul class="navlinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="about.html">About</a></li>
+        <li><a href="work.html">MyWork</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+      </ul>
+    </nav>
+    <hr class="line">
+
+
+  </header>
+  <section class="skills mtop background2">
+    <div class="container flex">
+      <div class="left">
+        <div class="heading">
+          <div class="heading_top flex">
+            <!-- <div class="line"></div>
+            <div class="line line2"></div> -->
+            <!-- <i class="fas fa-circle"></i>
+            <h3> Expertise</h3> -->
+          </div>
+       
+        </div>
+
+        <div class="hero-text">
+          <h5 style="margin-bottom: -5em; "></h5>
+          <p style="padding: 20px;">
+            In November 2023, I embarked on a transformative journey as a Trainee at Andela, delving into comprehensive training in software development. During this period, I focused on honing my skills in UI/UX design and mastering JavaScript, with a particular emphasis on the React.js framework. </p>
+
+        </div>
+        
+      <a href="./contact.html"><button class="btn2 ">Hire Me</button></a>
+
+      </div>
+     <!-- line skill bars-->
+     <div class="line_content">
+      <div class="line flex1">
+        <p>JS/Express</p>
+        <div class="bar">
+          <div class="line_bar html"> </div>
+        </div>
+        <h5>85%</h5>
+      </div>
+
+      <div class="line">
+        <p>TWcs</p>
+        <div class="bar">
+          <div class="line_bar css"></div>
+        </div>
+        <h5>75%</h5>
+      </div>
+
+      <div class="line">
+        <p>p5js</p>
+        <div class="bar">
+          <div class="line_bar photo"> </div>
+        </div>
+        <h5>65%</h5>
+      </div>
+      <div class="line">
+        <p>React,Next.js,</p>
+        <div class="bar">
+          <div class="line_bar pho"> </div>
+        </div>
+        <h5>70%</h5>
+      </div>
+      
+    </div>
+    
+</section>
+
+  <script>
+    var togglebtn = document.querySelector(".togglebtn");
+    var nav = document.querySelector(".navlinks");
+    var links = document.querySelector(".navlinks li");
+
+    togglebtn.addEventListener("click", function () {
+      this.classList.toggle("click");
+      nav.classList.toggle("open");
+    })
+
+
+  </script>
+</body>
+
+</html>
