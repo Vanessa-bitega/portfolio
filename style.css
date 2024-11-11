@@ -7,7 +7,7 @@
 }
 body {
     
-  height: 100vh; /* Set the body height to the full viewport height */
+  min-height: 100vh; /* Set the body height to the full viewport height */
   margin: 0; /* Remove default margin */
 
   overflow-x: hidden;
@@ -187,7 +187,7 @@ nav .navlinks li a.active {
 @media (max-width: 768px) {
     body {
         overflow-x: hidden;
-        background: #222;
+        background: #011136fb;
         overflow-y: auto  auto; /* Enable vertical scrolling */
     }
     .grid {
